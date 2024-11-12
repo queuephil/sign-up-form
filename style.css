@@ -1,0 +1,124 @@
+@import url("./reset.css");
+@font-face {
+    font-family: "Norse-Bold";
+    src: url("./Norse-Bold.otf");
+}
+
+/* _____________________________body and main */
+
+body * {
+    display: flex;
+}
+
+main>div {
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* _____________________________left side of the page */
+
+.left-container {
+    background-image: url("./halie-west-25xggax4bSA-unsplash.jpg");
+    background-size: cover;
+    flex: 3;
+    justify-content: space-evenly;
+}
+
+.left-container * {
+    color: white;
+}
+
+.logo-container {
+    background-color: #00000080;
+    height: 20%;
+    padding: 1rem;
+    font-family: Norse-Bold;
+    font-size: 8rem;
+}
+
+.credits-container {
+    position: relative;
+    bottom: -14rem;
+    align-self: center;
+}
+
+.credits-container * {
+    display: inline;
+}
+
+/* _____________________________right side of the page */
+
+.right-container {
+    flex: 5;
+    justify-content: center;
+    gap: 2rem;
+    background-color: rgb(248, 246, 246);
+}
+
+.right-container div {
+    margin-left: 2rem;
+    max-width: 70ch;
+}
+
+.large {
+    font-size: 1.5rem;
+}
+
+fieldset {
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    background-color: white;
+    border: 0;
+    box-shadow: 0rem 0rem 0.5rem lightgray;
+    width: 100%;
+}
+
+.legend {
+    flex-basis: 100%;
+    padding-bottom: 1.5rem;
+}
+
+.fields {
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.form {
+    flex-direction: column;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.form input {
+    border-radius: 0.5rem;
+    border: 1px solid #E5E7EB;
+    height: 2rem;
+    width: 15rem;
+}
+
+.form input:focus {
+    border: 1px solid darkblue;
+    outline: none;
+}
+
+.form input:invalid {
+    border: 1px solid darkred;
+    outline: none;
+}
+
+.create-account input {
+    background-color: #596D48;
+    color: white;
+    border-radius: 0.5rem;
+    border: 0;
+    padding: 0.8rem 3rem;
+    font-weight: bold;
+}
+
+.already-account * {
+    display: inline;
+    color: black;
+}
+
+
+
