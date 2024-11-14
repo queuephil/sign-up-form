@@ -1,10 +1,25 @@
-@import url("./reset.css");
-@font-face {
-    font-family: "Norse-Bold";
-    src: url("./Norse-Bold.otf");
+/* reset CSS */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 0;
+  
+    outline: none;
 }
 
-/* _____________________________body and main */
+body {
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1.5;
+}
+
+/* body and main */
+
+@font-face {
+    font-family: "Norse-Bold";
+    src: url("./ressources/Norse-Bold.otf");
+}
 
 body * {
     display: flex;
@@ -15,10 +30,10 @@ main>div {
     height: 100vh;
 }
 
-/* _____________________________left side of the page */
+/* left side of the page */
 
 .left-container {
-    background-image: url("./halie-west-25xggax4bSA-unsplash.jpg");
+    background-image: url("./ressources/halie-west-25xggax4bSA-unsplash.jpg");
     background-size: cover;
     flex: 3;
     justify-content: space-evenly;
@@ -38,7 +53,7 @@ main>div {
 
 .credits-container {
     position: relative;
-    bottom: -14rem;
+    bottom: -15rem;
     align-self: center;
 }
 
@@ -46,13 +61,12 @@ main>div {
     display: inline;
 }
 
-/* _____________________________right side of the page */
+/* right side of the page */
 
 .right-container {
     flex: 5;
     justify-content: center;
     gap: 2rem;
-    background-color: rgb(248, 246, 246);
 }
 
 .right-container div {
@@ -75,7 +89,7 @@ fieldset {
 
 .legend {
     flex-basis: 100%;
-    padding-bottom: 1.5rem;
+    padding-bottom: 2rem;
 }
 
 .fields {
@@ -86,7 +100,6 @@ fieldset {
 .form {
     flex-direction: column;
     text-transform: uppercase;
-    font-size: 0.8rem;
 }
 
 .form input {
@@ -96,21 +109,19 @@ fieldset {
     width: 15rem;
 }
 
-.form input:focus {
-    border: 1px solid darkblue;
-    outline: none;
-}
-
 .form input:invalid {
     border: 1px solid darkred;
-    outline: none;
+}
+
+.form input:focus {
+    border: 1px solid darkblue;
+    box-shadow: 0rem 0rem 0.5rem lightgray;
 }
 
 .create-account input {
     background-color: #596D48;
     color: white;
     border-radius: 0.5rem;
-    border: 0;
     padding: 0.8rem 3rem;
     font-weight: bold;
 }
@@ -119,6 +130,3 @@ fieldset {
     display: inline;
     color: black;
 }
-
-
-
